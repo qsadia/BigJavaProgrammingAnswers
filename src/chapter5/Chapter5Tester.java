@@ -34,6 +34,16 @@ public class Chapter5Tester {
 		boolean equals = l.intersects(new Line(0,2,5,10));
 		System.out.println("Is equal? " + equals);
 		
+		CombinationLock lock = new CombinationLock("MZS");
+		lock.open();
+		lock.turn('S');
+		lock.turn('Z');
+		lock.turn('M');
+		lock.open();
+		lock.turn('Z');
+		lock.turn('S');
+		lock.open();
+		
 	}
 	
 }
